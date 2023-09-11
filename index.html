@@ -22,20 +22,20 @@
             <!-- Botones Iniciales  -->
             <section class="ah__section homeBtn center">
                 <div class="section__buttons column">
-                    <button type="button" onclick="IniciarJuego()" class="ah_button btn__default">Iniciar Juego</button>
-                    <button type="button" onclick="IngresarPalabra()" class="ah_button btn__default__Outlined">Ingresar una
+                    <button type="button" id="btn-Inicar-Juego" class="ah_button btn__default">Iniciar Juego</button>
+                    <button type="button" id="btn-Ingresar-Palabra" class="ah_button btn__default__Outlined">Ingresar una
                         palabra</button>
                 </div>
             </section>
             <!-- Ingresar palabra  -->
             <section class="ah__section InsertInfo center">
                 <form class="section__form" action="javascript:void(0)">
-                    <textarea class="ip_form_input" type="text" maxlength="8" placeholder="Ingrese una palabra"></textarea>
+                    <textarea class="ip_form_input" type="text" maxlength="8" placeholder="Ingrese una palabra" data-nuevaPalabra required></textarea>
                     <span class="ip_form_info"><i class="fa-solid fa-circle-info"></i>Maximo 8 Letras</span>
                     <div class="section__buttons">
-                        <button type="button" onclick="guardarIP()" class="ah_button w-full btn__default">Guardar y
+                        <button type="button" id="Guardar-Palabra" class="ah_button w-full btn__default">Guardar y
                             empezar</button>
-                        <button type="button" onclick="cancelarIP()"
+                        <button type="button" id="cancelar"
                             class="ah_button w-full btn__default__Outlined">Cancelar</button>
                     </div>
                 </form>
@@ -48,14 +48,14 @@
                     </div>
                     <div class="juego_box__texto">
                         <div class="adivinado"> </div>
-                        <div class="errado">
+                        <div class="ah__mensajes">
                             <div class="errado_box"></div>
+                            <div class="ganado_box"></div>
                         </div>
                     </div>
                     <form class="juego_box__botones no-select" action="javascript:void(0)">
-                        <button type="button" onclick="nuevoJuego()" class="ah_button btn__default">Nuevo Juego</button>
-                        <button type="button" onclick="desistirJuego()"
-                            class="ah_button btn__default__Outlined">Desistir</button>
+                        <button type="button" id="nuevo-juego" class="ah_button btn__default">Nuevo Juego</button>
+                        <button type="button" id="desistir-Palabra" class="ah_button btn__default__Outlined">Desistir</button>
                     </form>
                 </div>
             </section>
@@ -64,7 +64,7 @@
             <small>Desarrollado por Lenny Loor | 2023</small>
         </footer>
         <!-- AUDIO -->
-        <!-- <div class="ah__audio" id="audio-control">
+        <div class="ah__audio" id="audio-control">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -75,10 +75,10 @@
              <source src="assets/audio/music-juego.mp3" type="audio/mpeg"></source>
              Your browser does not support the audio element.
             </audio>
-        </div> -->
+        </div>
 
         <script type="text/javascript" src="assets/js/main.js"></script>
-        <!-- <script type="text/javascript" src="assets/js/audio.js"></script> -->
+        <script type="text/javascript" src="assets/js/audio.js"></script>
     </body>
 
 </html>

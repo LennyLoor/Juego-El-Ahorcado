@@ -9,6 +9,11 @@ body {
     position: relative;
 }
 
+/* COLOR */
+.msm_error{
+    color: var(--color-error-3)!important;
+}
+
 /* SELECTION */
 body ::selection {
     background-color: var(--color-secundary-2);
@@ -85,7 +90,7 @@ body ::selection {
 }
 
 .homeBtn {
-    display: none;
+    display: flex;
 }
 
 .homeBtn .section__buttons {
@@ -175,7 +180,7 @@ body ::selection {
 /* CONTENT | INICIAR JUEGO */
 
 .IniciarJuego {
-    display: flex;
+    display: none;
 }
 
 .juego_box_image {
@@ -208,7 +213,7 @@ body ::selection {
     padding-bottom: 0.8rem;
 }
 
-.errado {
+.ah__mensajes {
     width: 100%;
     font-size: 1rem;
     display: flex;
@@ -220,10 +225,23 @@ body ::selection {
 .errado_box {
     color: var(--color-white);
     background-color: var(--color-error);
-    padding: .5rem 1rem;
     border-radius: .5rem;
 }
-
+.ganado_box {
+    color: var(--color-white);
+    background-color: var(--color-success);
+    border-radius: .5rem;
+}
+.pd-1{
+    padding: .5rem 1rem;
+}
+.ah_palabra{
+    background-color: var(--color-white);
+    color: var(--color-error);
+    padding: 0 1rem;
+    border-radius: .3rem;
+    margin-left: 0.5rem;
+}
 .juego_box__botones {
     display: flex;
     gap: 1rem;

@@ -13,6 +13,9 @@
 
     --color-error: rgb(192, 54, 54);
     --color-error-2: rgb(202, 94, 94);
+    --color-error-3:rgb(255 136 136);
+
+    --color-success: #5d8711;
 
     --bg-footer: #142d46;
     --bg-footer-selection: #244668;
