@@ -4,6 +4,7 @@
     var audio;
 
     audio = document.getElementById('audio');
+    audio.volume = .2;
 
     const audioControl = document.getElementById('audio-control');
     audioControl.addEventListener('click', clickAudioControl, false);
