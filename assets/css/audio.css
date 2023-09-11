@@ -1,0 +1,85 @@
+
+.ah__audio {
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: var(--color-secundary-2);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ah__audio:hover {
+    box-shadow: -1px 1px 4px 0 var(--shadow-btn);
+}
+
+.ah__audio span.bar {
+    display: inline-block;
+    position: absolute;
+    left: 1.05rem;
+    bottom: .9rem;
+    width: .2rem;
+    height: .2rem;
+    background: #fff;
+    transition: all 0.25s ease-in;
+    animation: barMotion 0.3s ease-out infinite;
+}
+.ah__audio span.bar:nth-child(2) {
+    left: 1.5rem;
+    animation-direction: reverse;
+}
+.ah__audio span.bar:nth-child(3) {
+    left: 1.95rem;
+    animation-direction: alternate-reverse;
+}
+
+.ah__audio.noVolume span.bar {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    animation: none;
+}
+
+ .ah__bg__audio {
+  display: block;
+  position: fixed;
+  bottom: -43px;
+  left: 5px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+ }
+ .ah__bg__audio:hover {
+  bottom: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+ }
+ .ah__bg__audio audio {
+  background: #ffffff;
+  padding: 5px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 1rem;
+  z-index: 9998;
+ }
+ .ah__bg__audio i {
+  font-size: 40px;
+  display: block;
+  background: #ffffff;
+  padding: 5px;
+  width: 50px;
+  float: none;
+  margin-bottom: -1px;
+  z-index: 9999;
+ }
+
+ @keyframes barMotion {
+    100% {
+        height: 1.2rem;
+    }
+ }

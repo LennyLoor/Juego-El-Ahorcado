@@ -13,7 +13,6 @@
     }
 
     function dibujar(juego) {
-        console.log(juego.estado);
         /* Actualizar la imagen */
         var element_;
         element_ = html.imagen;
@@ -45,7 +44,8 @@
         }
 
     };
-    dibujar(juego);
+    dibujar(juego); 
+
     
 })(); 
 const section_Iniciar = document.querySelector('.homeBtn');
