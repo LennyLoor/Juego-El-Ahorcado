@@ -1,0 +1,25 @@
+:root {
+    --bg-wallpaper-body: url('../images/ahorcado/wallpaper.svg');
+
+    --color-primary: #0A3871;
+    --color-primary-2: #90c1f1;
+    --color-primary-3: #42709e;
+
+    --color-secundary: #006e7f;
+    --color-secundary-2: #0c9cb3;
+
+    --color-gray: #D8DFE8;
+    --color-white: #ffffff;
+
+    --color-error: rgb(192, 54, 54);
+    --color-error-2: rgb(202, 94, 94);
+
+    --bg-footer: #142d46;
+    --bg-footer-selection: #244668;
+
+    --bg-body-gradient-1: rgba(28, 53, 113, 1);
+    --bg-body-gradient-2: rgba(19, 104, 159, 1);
+
+    --shadow-footer: rgba(0,0,0,0.4);
+ 
+}

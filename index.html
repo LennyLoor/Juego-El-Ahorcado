@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego | El Ahorcado</title>
+        <link rel="shortcut icon" href="assets/images/logo/favicon.ico">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/variables.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Script -->
+        <script src="https://kit.fontawesome.com/b229e29af4.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="bg__gradient">
+        <header class="ah__header no-select">
+            <img src="assets/images/logo/Logo.png" alt="logo">
+        </header>
+        <main class="ah__content">
+            <!-- Botones Iniciales  -->
+            <section class="ah__section homeBtn center">
+                <div class="section__buttons column">
+                    <button type="button" onclick="IniciarJuego()" class="ah_button btn__default">Iniciar Juego</button>
+                    <button type="button" onclick="IngresarPalabra()" class="ah_button btn__default__Outlined">Ingresar una
+                        palabra</button>
+                </div>
+            </section>
+            <!-- Ingresar palabra  -->
+            <section class="ah__section InsertInfo center">
+                <form class="section__form" action="javascript:void(0)">
+                    <textarea class="ip_form_input" type="text" maxlength="8" placeholder="Ingrese una palabra"></textarea>
+                    <span class="ip_form_info"><i class="fa-solid fa-circle-info"></i>Maximo 8 Letras</span>
+                    <div class="section__buttons">
+                        <button type="button" onclick="guardarIP()" class="ah_button w-full btn__default">Guardar y
+                            empezar</button>
+                        <button type="button" onclick="cancelarIP()"
+                            class="ah_button w-full btn__default__Outlined">Cancelar</button>
+                    </div>
+                </form>
+            </section>
+            <!-- Iniciar Juego  -->
+            <section class="ah__section IniciarJuego center">
+                <div class="juego_box">
+                    <div class="juego_box_image no-select">
+                        <img alt="hombre-ahorcado" src="assets/images/ahorcado/ahorcado_0.svg">
+                    </div>
+                    <div class="juego_box__texto">
+                        <div class="adivinado">
+                            <span>A</span>
+                            <span>L</span>
+                            <span></span>
+                            <span></span>
+                            <span>A</span>
+                        </div>
+                        <div class="errado">
+                            <div class="errado_box">
+                                <span>B</span>
+                                <span>J</span>
+                                <span>K</span>
+                                <span>C</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="juego_box__botones no-select" action="javascript:void(0)">
+                        <button type="button" onclick="nuevoJuego()" class="ah_button btn__default">Nuevo Juego</button>
+                        <button type="button" onclick="desistirJuego()"
+                            class="ah_button btn__default__Outlined">Desistir</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="ah__footer">
+            <small>Desarrollado por Lenny Loor | 2023</small>
+        </footer>
+        <script type="" src="assets/js/main.js"></script>
+    </body>
+
+</html>
